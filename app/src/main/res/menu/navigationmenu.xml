@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/home" android:title="HOME" android:icon="@drawable/bh_hdpi" android:checkable="true"/>
+<item android:id="@+id/wishlist" android:title="WISHLIST" android:icon="@drawable/bl_hdpi" android:checkable="true"/>
+<item android:id="@+id/custom" android:title="CUSTOMER CARE" android:icon="@drawable/b_hdpi" android:checkable="true"/>
+<item android:id="@+id/about" android:title="ABOUT US" android:icon="@drawable/bf_hdpi" android:checkable="true"/>
+<item android:id="@+id/help" android:title="HELP" android:icon="@drawable/bc_hdpi" android:checkable="true"/>
+</menu>

@@ -25,7 +25,7 @@ public class Splash_screen extends AppCompatActivity {
         ImageView iv =  findViewById(R.id.image_view);
         iv.setAlpha(0f);
         ObjectAnimator objectAnimator = ObjectAnimator.ofFloat(iv,"alpha",0f,1f);
-        ObjectAnimator objectAnimator1 = ObjectAnimator.ofFloat(iv,"translationY",100,0);
+        ObjectAnimator objectAnimator1 = ObjectAnimator.ofFloat(iv,"translationY",50,0);
         objectAnimator.setDuration(300);
         objectAnimator1.setDuration(300);
         objectAnimator.start();
