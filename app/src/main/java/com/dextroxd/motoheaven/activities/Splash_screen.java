@@ -1,12 +1,13 @@
-package com.dextroxd.motoheaven;
+package com.dextroxd.motoheaven.activities;
 
 import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.os.Handler;
-import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
+
+import com.dextroxd.motoheaven.R;
 
 public class Splash_screen extends AppCompatActivity {
 
