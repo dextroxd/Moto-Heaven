@@ -1,4 +1,4 @@
-package com.dextroxd.motoheaven.activities;
+package com.dextroxd.motoheaven.adapters;
 
 
 import android.app.Activity;
@@ -7,15 +7,14 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.ListAdapter;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
 import com.dextroxd.motoheaven.R;
+import com.dextroxd.motoheaven.activities.Model_card;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Cardcustomadapter extends RecyclerView.Adapter<Cardcustomadapter.MyViewHolder>
 {

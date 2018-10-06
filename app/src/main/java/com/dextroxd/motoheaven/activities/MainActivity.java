@@ -13,9 +13,10 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-import android.widget.ListView;
+import android.view.View;
 
 import com.dextroxd.motoheaven.R;
+import com.dextroxd.motoheaven.adapters.Cardcustomadapter;
 
 import java.util.ArrayList;
 
@@ -92,6 +93,49 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(customadapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         getData();
+        recyclerView.addOnItemTouchListener(new RecyclerTouchListener(this, recyclerView, new RecyclerTouchListener.ClickListener() {
+            @Override
+            public void onClick(View view, int position) {
+                Model_card mode = arrayList.get(position);
+                Intent in = new Intent(MainActivity.this,EachCard.class);
+                Bundle bundle = new Bundle();
+                ArrayList<String>urls = new ArrayList<>();
+                if(mode.getmName()=="Roadster")
+                {urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538736428/harley-davidson-roadster-doin-time.jpg");
+                urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538736427/19-sportster-roadster-hero.jpg");
+                urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538736438/Harley-Davidson-Roadster-XL1200CX-Static-11.jpg");
+                urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538736436/Harley-Davidson-Roadster-XL1200CX-Static-8.jpg");
+                urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538736430/2000000014.jpg");
+                bundle.putStringArrayList(mode.getmName(),urls);}
+                else if(mode.getmName()=="Fatboy")
+                {urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538737653/ea18e6d543c08c87768218840ad3c283.jpg");
+                    urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538737678/maxresdefault.jpg");
+                    urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538737691/a0d84a41159e1966ab3a26e55f801f54--moped-fat.jpg");
+                    urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538737678/maxresdefault.jpg");
+                    urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538828208/Thunderbike-customized-Harley-Davidson-Fat-Boy.jpg");
+                    bundle.putStringArrayList(mode.getmName(),urls);}
+                else if(mode.getmName()=="Dyna")
+                {urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538738077/harley-davidson-dyna-1.jpg");
+                    urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538738051/original.jpg");
+                    urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538738102/5bbaaca9fd0da9b018a65a2aec30a184.jpg");
+                    urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538738121/_harley-davidson-dyna-3.jpg");
+                    urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538828285/DSC04278.jpg");
+                    bundle.putStringArrayList(mode.getmName(),urls);}
+
+                in.putExtras(bundle);
+                startActivity(in);
+
+            }
+
+            @Override
+            public void onLongClick(View view, int position) {
+
+            }
+        }));
+
+
+
+
         }
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
@@ -129,6 +173,7 @@ public class MainActivity extends AppCompatActivity {
         {
             arrayList.add(new Model_card(aImage.get(i),aName.get(i),aCost.get(i),aRate.get(i)));
         }
+
         customadapter.notifyDataSetChanged();
     }
 }
