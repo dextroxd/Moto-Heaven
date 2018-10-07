@@ -9,16 +9,30 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".activities.EachCard">
-
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewPagerr">
     <android.support.v4.view.ViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="300dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SliderDots"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp"
+        android:elevation="8dp"
+        />
+    </RelativeLayout>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/heading"
-        android:layout_below="@id/viewPager"
+        android:layout_below="@id/viewPagerr"
         android:textSize="24sp"
         android:padding="8dp"
         android:textColor="#000"
@@ -29,7 +43,7 @@
         android:layout_height="wrap_content"
         android:numStars="3"
         android:id="@+id/rate"
-        android:layout_below="@id/viewPager"
+        android:layout_below="@id/viewPagerr"
         android:layout_alignParentRight="true"/>
     <TextView
         android:id="@+id/description"
