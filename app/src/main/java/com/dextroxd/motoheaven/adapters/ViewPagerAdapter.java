@@ -21,7 +21,7 @@ public class ViewPagerAdapter extends PagerAdapter {
     ArrayList<String> imagesv = new ArrayList<>();
     public ViewPagerAdapter(Context context,ArrayList<String> mn) {
         this.context = context;
-        for(int i=0;i<mn.size();i++)
+        for(int i=0;i<5;i++)
         {
             imagesv.add(mn.get(i));
         }

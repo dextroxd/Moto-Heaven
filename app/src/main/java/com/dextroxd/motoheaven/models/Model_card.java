@@ -1,4 +1,4 @@
-package com.dextroxd.motoheaven.activities;
+package com.dextroxd.motoheaven.models;
 
 public class Model_card
 {

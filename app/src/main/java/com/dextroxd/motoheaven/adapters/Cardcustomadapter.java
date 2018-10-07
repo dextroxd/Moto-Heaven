@@ -11,7 +11,7 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 
 import com.dextroxd.motoheaven.R;
-import com.dextroxd.motoheaven.activities.Model_card;
+import com.dextroxd.motoheaven.models.Model_card;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
