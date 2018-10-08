@@ -8,7 +8,9 @@
     app:cardUseCompatPadding="true"
     app:cardPreventCornerOverlap="true"
     app:cardElevation="8dp"
-    android:layout_margin="8dp">
+    android:layout_margin="8dp"
+
+   >
     <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -18,14 +20,14 @@
                 android:src="@drawable/chop"
                 android:id="@+id/imagecard"
                 android:layout_marginBottom="8dp"
-                android:scaleType="fitXY"
-                />
+                android:scaleType="centerCrop" />
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/imagecard"
                 android:orientation="vertical"
-                android:padding="8dp">
+                android:padding="8dp"
+                >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -35,7 +37,8 @@
             android:textColor="#000"
             android:text="Chopper"
             android:textSize="20sp"
-            android:layout_marginBottom="8dp"/>
+            android:layout_marginBottom="8dp"
+            />
 
             <TextView
                 android:id="@+id/cost"
@@ -59,6 +62,7 @@
             android:numStars="3"
             style="@style/Base.Widget.AppCompat.RatingBar.Indicator"
             android:layout_alignParentEnd="true"
+            android:isIndicator="true"
             android:layout_marginEnd="8dp"
             android:scaleX=".5"
             android:scaleY=".5" />

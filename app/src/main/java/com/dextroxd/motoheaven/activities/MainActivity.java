@@ -102,29 +102,29 @@ public class MainActivity extends AppCompatActivity {
                 Bundle bundle = new Bundle();
                 ArrayList<String>urls = new ArrayList<>();
                 if(mode.getmName()=="Roadster")
-                {urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538736428/harley-davidson-roadster-doin-time.jpg");
-                urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538736427/19-sportster-roadster-hero.jpg");
-                urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538736438/Harley-Davidson-Roadster-XL1200CX-Static-11.jpg");
-                urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538736436/Harley-Davidson-Roadster-XL1200CX-Static-8.jpg");
-                urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538736430/2000000014.jpg");
+                {urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538972808/sportster-roadster-int-gallery-1.jpg");
+                urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538972745/sportster-roadster-gallery-2.jpg");
+                urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538972933/sportster-roadster-gallery-3.jpg");
+                urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538972967/sportster-roadster-gallery-4.jpg");
+                urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538973004/sportster-roadster-gallery-5.jpg");
                 urls.add("The new model in the Harley-Davidson India range gets the same V-Twin 1200cc Evolution air-cooled unit that does duty on the 1200 Custom, although the state of tune is different in both the models. The prowess gets new paint-schemes and graphics that add to its rugged and muscular look. Priced at Rs 9.70 lakh (ex-showroom, Delhi), new Roadster from Harley-Davidson gets the V-Tzwin 1200cc Evolution air-cooled engine making peak torque of 96Nm at 4000rpm. Placed above Forty-Eight in the line-up, the sportster comes with a 4-inch digital instrumentation which displays RPMs, speed and time. Besides, it also gets a trip meter, gear indicator and tell-tale lights.");
                 urls.add(String.valueOf(mode.getmRating()));
                 bundle.putStringArrayList(mode.getmName(),urls);}
                 else if(mode.getmName()=="Fatboy")
-                {urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538737653/ea18e6d543c08c87768218840ad3c283.jpg");
-                    urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538737678/maxresdefault.jpg");
-                    urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538891829/softail-fatboy-gallery-2.jpg");
-                    urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538737664/ea778ad29c8aa7a2e6c00da4db022adf.jpg");
-                    urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538828208/Thunderbike-customized-Harley-Davidson-Fat-Boy.jpg");
+                {urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538975234/557854ebccb1e.jpg");
+                    urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538973562/softail-fatboy-gallery-4.jpg");
+                    urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538973641/kf3-MKE-EIGHT-Big-twin.jpg");
+                    urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538973627/kf2-steamroller-stance.jpg");
+                    urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538973660/kf5-New-Softail-Frame.jpg");
                     urls.add("Yes, it's fat and that is why it gets its name. The Fat Boy has a unique design and there is a generous dose of chrome and that is not all. It comes with a load full of features too. It features a wide FLH-style handlebar, a textured leather seat insert, custom metal fenders and a shotgun-style dual exhaust system. The Fat Boy is powered by a Twin Cam 103 1690cc engine that produces a generous amount of power and it's a highway cruiser so don't try and tame it by riding it in the city. It's clearly out of place there.");
                     urls.add(String.valueOf(mode.getmRating()));
                     bundle.putStringArrayList(mode.getmName(),urls);}
                 else if(mode.getmName()=="Dyna")
-                {urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538738077/harley-davidson-dyna-1.jpg");
-                    urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538738051/original.jpg");
-                    urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538738102/5bbaaca9fd0da9b018a65a2aec30a184.jpg");
-                    urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538738121/_harley-davidson-dyna-3.jpg");
-                    urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538828285/DSC04278.jpg");
+                {urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538974219/Street-Bob-1800-1.jpg");
+                    urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538974260/Low-Rider-Trees.jpg");
+                    urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538974288/Fat-Bob-1800.jpg");
+                    urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538974309/Wide-Glide-1800.jpg");
+                    urls.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538974322/Switchback-1800.jpg");
                     urls.add("The Harley-Davidson Dyna lineup includes some of the most widely recognized motorcycles in the world. These stripped down cruisers boast raw custom style, big V- Twin performance, and the kind of instantly recognizable Harley-Davidson nameplates that you want. Read all about the Street Bob®, Low Rider®, Fat Bob® and the rest of the Dyna® model line here at Huntington Beach Harley-Davidson in the Anaheim and Irvine, CA area!");
                     urls.add(String.valueOf(mode.getmRating()));
                     bundle.putStringArrayList(mode.getmName(),urls);}
@@ -164,9 +164,9 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<String> aName = new ArrayList<>();
         ArrayList<String> aCost = new ArrayList<>();
         ArrayList<Float> aRate = new ArrayList<>();
-        aImage.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538736428/harley-davidson-roadster-doin-time.jpg");
-        aImage.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538737653/ea18e6d543c08c87768218840ad3c283.jpg");
-        aImage.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538738077/harley-davidson-dyna-1.jpg");
+        aImage.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538972808/sportster-roadster-int-gallery-1.jpg");
+        aImage.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538975234/557854ebccb1e.jpg");
+        aImage.add("https://res.cloudinary.com/dj3vndkb4/image/upload/v1538974219/Street-Bob-1800-1.jpg");
         aName.add("Roadster");
         aName.add("Fatboy");
         aName.add("Dyna");
